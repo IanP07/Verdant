@@ -1,0 +1,4 @@
+[build]
+  base = "frontend/verdant-frontend-svelte"
+  command = "npm run build"
+  publish = "frontend/verdant-frontend-svelte/ .svelte-kit/output"
