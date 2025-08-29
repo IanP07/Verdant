@@ -571,6 +571,9 @@ animation-iteration-count: infinite;
 }
 
 .tech-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     width: 115px;
     height: 115px;
