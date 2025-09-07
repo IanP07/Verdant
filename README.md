@@ -7,4 +7,5 @@
 - [Frontend](frontend/README.md) - Sveltekit Frontend
 - [website](website/README.md) - Frontend Interface at verdantsearch.netlify.app
 
-
+## Figma UI Diagram
+<img style="width: 100%; height: auto;" src="images/VerdantFigmaDiagram.png" />
