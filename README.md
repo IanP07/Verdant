@@ -5,7 +5,7 @@
 - [Database](docs/database/README.md) - MongoDB Database
 - [Backend](docs/backend/README.md) - Backend and Search Query Algorithm
 - [Frontend](docs/frontend/README.md) - Sveltekit Frontend
-- [website](docs/website/README.md) - Frontend Interface at verdantsearch.netlify.app
+- [website](https://verdantsearch.netlify.app) - Frontend Interface at verdantsearch.netlify.app
 
 ## Figma UI Diagram
 <img style="width: 100%; height: auto;" src="images/FigmaDiagram.png" />
