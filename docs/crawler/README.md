@@ -30,3 +30,9 @@ allowed_domains = [
            "publicdomainreview.org"]
 ```
 
+<h4>2.) The url, title (if any), and description is then scraped for each website and stored in a json file.</h4>
+
+<h4>3.) It then searches for english links to other sites within each existing sites page content, and adds it to the queue to scrape. </h4>
+
+<h4>4.) Finally, the page content is broken up into a frequency dictionary, and stored in a MongoDB database totalling ~25k entries.</h4>
+
