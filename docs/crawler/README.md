@@ -8,4 +8,25 @@
 
 ## Steps
 
-<h4>1.) User submits a POST request containing their search queries as parameters (minus common words like the, and, for, etc ) </h4>
+<h4>1.) The <a href="../../crawler/main.py">crawler</a> starts at a list of hardcoded, allowed, websites: </h4>
+
+```json
+allowed_domains = [
+           "wikipedia.org",
+           "gutenberg.org",
+           "realpython.com",
+           "allrecipes.com",
+           "ocw.mit.edu",
+           "arxiv.org",
+           "wikihow.com",
+           "w3schools.com",
+           "geeksforgeeks.org",
+           "reuters.com",
+           "propublica.org",
+           "openstax.org",
+           "archive.org",
+           "ted.com",
+           "wiki.openstreetmap.org",
+           "publicdomainreview.org"]
+```
+
