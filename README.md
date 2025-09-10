@@ -14,7 +14,7 @@
 
 ## Parts
 - [Crawler](docs/crawler/README.md) - Web Crawler (Scrapy)
-- [Database](docs/database/README.md) - MongoDB Database
+- [Database](docs/database/README.md) - MongoDB Database ~25k entries
 - [Backend](docs/backend/README.md) - Backend and Search Query Algorithm
 - [Frontend](docs/frontend/README.md) - Sveltekit Frontend
 - [website](https://verdantsearch.netlify.app) - Frontend Interface at verdantsearch.netlify.app
