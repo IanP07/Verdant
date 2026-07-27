@@ -24,20 +24,16 @@
 
   async function getSites(searchTerms: string[]) {
     try {
-      const params = new URLSearchParams();
-      searchTerms.forEach((term) => {
-        if (term.trim()) {
-          params.append("term", term.trim());
-        }
-      });
+      const query = searchTerms.join(" ");
 
       const res = await fetch(
-        `https://verdant-backend-production.up.railway.app/verdant/api?${params}`,
+        `https://http://127.0.0.1:8000/search`,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
+          body: query,
         }
       );
 
