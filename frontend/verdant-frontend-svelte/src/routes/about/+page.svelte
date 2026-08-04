@@ -17,8 +17,10 @@
         pages, embedded using MiniLM-V6 (384dim) and stored locally on a rasberry pi exposed via cloudflare tunnels.
       </h2>
       <h2 style="margin-top: 50px;">
-        It focuses on tech and scientific, offering a clean,
-        bloat-free search experience.
+        The site focuses on tech and scientific sites, offering a clean, fast
+        bloat-free search experience. 
+        
+        (Redis caching and other cool features coming soon!)
       </h2>
     </div>
     <div id="tech-stack-wrapper">
