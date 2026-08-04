@@ -27,13 +27,15 @@
       const query = searchTerms.join(" ");
 
       const res = await fetch(
-        `https://http://127.0.0.1:8000/search`,
+        `https://designer-restructuring-chairs-trusts.trycloudflare.com/search`,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: query,
+          body: JSON.stringify({
+            query: query,
+          }),
         }
       );
 
@@ -63,6 +65,16 @@
       return url;
     }
   }
+
+  function limitDescription(description: string) {
+    if(description.length > 250) {
+      let output = description.slice(0, 250) + "..."
+      return output;
+    } else {
+      return description;
+    }
+  }
+  
 
   function handleKeyDown(event: { key: string }) {
     if (event.key === "Enter") {
@@ -126,7 +138,7 @@
             </h2>
             <div id="percent-bar-container-small">
               <h2 style="font-size: 64px; color: #135902; margin-top: 10px;">
-                {Math.round(matchScore)}%
+                {Math.round(matchScore*100)}%
               </h2>
               <div
                 id="outer-percent-bar-small"
@@ -134,7 +146,7 @@
               >
                 <div
                   id="inner-percent-bar-small"
-                  style="height: {matchScore}%"
+                  style="height: {matchScore*100}%"
                 ></div>
               </div>
             </div>
@@ -153,7 +165,7 @@
               id="websites-loaded-fraction-small"
               style="font-size: 64px; color: #585858; margin-top: 23px; margin-left: 23px;"
             >
-              {websitesLoaded}/10
+              {websitesLoaded}
             </h2>
           </div>
         </div>
@@ -175,7 +187,7 @@
             </a>
             <h2 class="description-text">
               <span class="date-text">{formattedDate} - </span>
-              {site.description}
+              {limitDescription(site.description)}
             </h2>
           </div>
         {/each}
@@ -192,10 +204,10 @@
       <h2 style="font-size: 40px;">Percent Match:</h2>
       <div id="percent-elements">
         <h2 style="font-size: 128px; color: #135902;">
-          {Math.round(matchScore)}%
+          {Math.round(matchScore*100)}%
         </h2>
         <div id="outer-percent-bar" style="display: flex; align-items: center;">
-          <div id="inner-percent-bar" style="height: {matchScore}%"></div>
+          <div id="inner-percent-bar" style="height: {matchScore*100}%"></div>
         </div>
       </div>
       <div
@@ -208,7 +220,7 @@
           style="font-size: 46px; color: #585858; margin-left: 10px;"
         >
           {websitesLoaded}
-          /10</span
+        </span
         >
       </h2>
     </div>
