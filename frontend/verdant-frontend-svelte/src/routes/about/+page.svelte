@@ -13,12 +13,12 @@
     <div id="about-us-header-div"><h1>About Verdant</h1></div>
     <div id="about-us-text-div">
       <h2>
-        Verdant is a minimalist, full-stack search engine that indexes ~25k
-        pages, stored in a JSON-based database.
+        Verdant is lightweight, complete search engine that indexes ~200k
+        pages, embedded using MiniLM-V6 (384dim) and stored locally on a rasberry pi exposed via cloudflare tunnels.
       </h2>
       <h2 style="margin-top: 50px;">
-        It focuses on technology and educational websites, offering a clean,
-        lightweight search experience.
+        It focuses on tech and scientific, offering a clean,
+        bloat-free search experience.
       </h2>
     </div>
     <div id="tech-stack-wrapper">
