@@ -27,7 +27,7 @@
       const query = searchTerms.join(" ");
 
       const res = await fetch(
-        `https://designer-restructuring-chairs-trusts.trycloudflare.com/search`,
+        `https://attach-moses-bloomberg-press.trycloudflare.com/search`,
         {
           method: "POST",
           headers: {
