@@ -27,7 +27,7 @@
       const query = searchTerms.join(" ");
 
       const res = await fetch(
-        `https://attach-moses-bloomberg-press.trycloudflare.com/search`,
+        `https://background-queue-indication-immune.trycloudflare.com/search`,
         {
           method: "POST",
           headers: {
