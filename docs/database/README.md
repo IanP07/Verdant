@@ -4,7 +4,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ## Info: 
-Database stored in MongoDB Atlas Cluster, total  logical size of 137mb and 24,455 pages indexed</h2>
+Database stored in Postgres hosted locally on Rasberry Pi, with cloudflare tunnels as a reverse proxy.</h2>
 
 ```json
 {
