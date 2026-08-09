@@ -1,5 +1,8 @@
 <img style="width: 200px; height: 200px" src="images/V-3.png" /><h1 style="font-size: 48px"><a href="https://verdantsearch.netlify.app">verdant</a> - Semantic search engine project</h1>
 
+## What is Verdant?
+Verdant is a semantic search engine, that has chunked and embedded over 200k search pages, stored locally on a rasberry pi + cloudflare tunnels, available with a react frontend at verdantsearch.netlify.app
+
 ## Technologies
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=for-the-badge&logo=python&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
