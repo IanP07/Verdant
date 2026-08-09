@@ -34,5 +34,7 @@ allowed_domains = [
 
 <h4>3.) It then searches for english links to other sites within each existing sites page content, and adds it to the queue to scrape. </h4>
 
-<h4>4.) Finally, the page content is broken up into a frequency dictionary, and stored in a MongoDB database totalling ~25k entries.</h4>
+<h4> 4.) Using Trafilatura, the page content is filtered, removing all ads, navbar, and other unecessary content. The crawler only appends sites that match certain critera, like english only, under 35k words, and not exceeding a certain link-depth to prioritize search breadth. </h4>
+
+<h4>5.) The page content is then chunked recursively using a langchain text splitter to split text at natural stopping points, like periods or newlines. Each chunk is vectorized, and then stored locally on a rasberry PI in a Postgres database + pgvector for the embedding.  </h4>
 
