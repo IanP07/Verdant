@@ -1,4 +1,4 @@
-<img style="width: 200px; height: 200px" src="images/V-3.png" /><h1 style="font-size: 48px"><a href="https://verdantsearch.netlify.app">verdant</a> - Complete search engine project</h1>
+<img style="width: 200px; height: 200px" src="images/V-3.png" /><h1 style="font-size: 48px"><a href="https://verdantsearch.netlify.app">verdant</a> - Semantic search engine project</h1>
 
 ## Technologies
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=for-the-badge&logo=python&logoColor=white)
