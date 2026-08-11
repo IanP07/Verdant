@@ -27,7 +27,7 @@
       const query = searchTerms.join(" ");
 
       const res = await fetch(
-        `https://browsers-surgery-workforce-massachusetts.trycloudflare.com/search`,
+        `https://highlighted-leaves-markets-tries.trycloudflare.com/search`,
         {
           method: "POST",
           headers: {
