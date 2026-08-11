@@ -4,27 +4,27 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ## Info: 
-Database stored in MongoDB Atlas Cluster, total  logical size of 137mb and 24,455 pages indexed</h2>
+Database stored in Postgres hosted locally on Rasberry Pi, with cloudflare tunnels as a reverse proxy.</h2>
 
 ```json
 {
-  "_id": {
-    "$oid": "689b48feb5f350176a0edba0"
-  },
+  "id": 384217,
   "url": "https://www.merriam-webster.com/dictionary/verdant",
-  "description": "English speakers have used verdant as a synonym for green since at least the 16th century, and...",
-  "frequency_dict": {
-    "with": 1,
-    "Remarkable": 1,
-    "Origins": 1,
-    "Games": 1,
-    "Quizzes": 1,
-    "Learn": 1,
-    "new": 1,
-    ...
-  },
-  "title": "VERDANT Definition & Meaning\n"
+  "title": "Verdant Definition & Meaning - Merriam-Webster",
+  "author": null,
+  "chunk": "verdant adjective. 1: green with growing plants. 2: of the color green. The hills were lush and verdant after the spring rains. ...",
+  "embedding": [
+    0.0124,
+    -0.0837,
+    0.0412,
+    0.1179,
+    -0.0291,
+    0.0648,
+    0.0037,
+    "...",
+    0.0216
+  ]
 }
 
 ```
-Upon user request, 500 most relevant pages get returned to backend as MongoDB uses a faster c++ sorting algorithm for more direct relationship, while the verdant backend has a more complex algorithm to filter results into 10 most relevant.  
+Upon user request, the top 50 most relevant chunks are found using pgvector cosine-similarity. Each unique site is send to the backend, reordered, and displayed on the frontend.

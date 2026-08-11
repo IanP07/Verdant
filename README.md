@@ -1,4 +1,7 @@
-<img style="width: 200px; height: 200px" src="images/V-3.png" /><h1 style="font-size: 48px"><a href="https://verdantsearch.netlify.app">verdant</a> - Complete search engine project</h1>
+<img style="width: 200px; height: 200px" src="images/V-3.png" /><h1 style="font-size: 48px"><a href="https://verdantsearch.netlify.app">verdant</a> - Semantic search engine project</h1>
+
+## What is Verdant?
+Verdant is a semantic search engine, that has chunked and embedded over 200k search pages, stored locally on a rasberry pi + cloudflare tunnels, available with a react frontend here: [Verdant](https://verdantsearch.netlify.app)
 
 ## Technologies
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=for-the-badge&logo=python&logoColor=white)
@@ -14,7 +17,7 @@
 
 ## Parts
 - [Crawler](docs/crawler/README.md) - Web Crawler (Scrapy)
-- [Database](docs/database/README.md) - MongoDB Database ~25k entries
+- [Database](docs/database/README.md) - Postgres Database locally hosted ~200k entries
 - [Backend](docs/backend/README.md) - Backend and Search Query Algorithm
 - [Frontend](docs/frontend/README.md) - Sveltekit Frontend
 - [website](https://verdantsearch.netlify.app) - Frontend Interface at verdantsearch.netlify.app
