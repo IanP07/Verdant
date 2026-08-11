@@ -27,7 +27,7 @@
       const query = searchTerms.join(" ");
 
       const res = await fetch(
-        `https://background-queue-indication-immune.trycloudflare.com/search`,
+        `https://browsers-surgery-workforce-massachusetts.trycloudflare.com/search`,
         {
           method: "POST",
           headers: {
